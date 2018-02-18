@@ -50,6 +50,8 @@ input:-moz-placeholder {
     opacity: 0.7;
     font-style: italic;
     font-size: 16px;
+    line-height: 34px;
+    height: 34px;
 }
 
 .title .logo {

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>svg-animation-search</title>
+</head>
+
+<body>
+    <div class="title">
+        <span>by</span>
+        <a class="logo" href="https://joomation.com/home">
+            <svg x="0px" y="0px" viewBox="0 0 80 25">
+                <ellipse class="logo-svg" cx="13.6" cy="12.8" rx="3.6" ry="4.4" />
+                <ellipse class="logo-svg" cx="23.7" cy="12.8" rx="3.6" ry="4.4" />
+                <ellipse class="logo-svg" cx="64" cy="12.8" rx="3.6" ry="4.4" />
+                <polyline class="logo-svg" points="37.6,17.2 37.6,8.4 34.1,12 30.5,8.4 30.5,17.2 " />
+                <g>
+                    <line class="logo-svg" x1="44.2" y1="14.3" x2="42" y2="14.3" />
+                    <polyline class="logo-svg" points="47.6,17.2 44.2,8.4 40.8,17.2 	" />
+                    <line class="logo-svg" x1="44.2" y1="14.3" x2="46.5" y2="14.3" />
+                </g>
+                <g>
+                    <line class="logo-svg" x1="48.4" y1="8.4" x2="53.8" y2="8.4" />
+                    <line class="logo-svg" x1="51.1" y1="8.4" x2="51.1" y2="17.2" />
+                </g>
+                <line class="logo-svg" x1="56.9" y1="8.4" x2="56.9" y2="17.2" />
+                <polyline class="logo-svg" points="70.6,17.2 70.6,8.4 76.6,17.2 76.6,8.4 " />
+                <path class="logo-svg" d="M6.8,8.3c0,0,0,3.9,0,5.8s-1.5,4.3-3.8,2.3" />
+            </svg>
+        </a>
+    </div>
+    <div class="search-icon-wrap">
+        <div class="search-icon" onclick="openSearch(event)">
+            <div class="search-svg">
+                <svg x="0px" y="0px" width="320" viewBox="0 0 300 25" } fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-miterlimit="10">
+                    <path d="M288.2,19.6c-1,0.4-2,0.6-3.1,0.6c-5,0-9.1-4.1-9.1-9.1s4.1-9.1,9.1-9.1s9.1,4.1,9.1,9.1c0,2.5-1,4.8-2.7,6.4L298,24H3"
+                    />
+                </svg>
+            </div>
+
+            <div class="search-input">
+                <input type="text" placeholder="Search" />
+                <div class="search-close" onclick="closeSearch(event)">
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function openSearch(e) {
+        var element = e.currentTarget;
+        element.classList.add("active");
+        document.getElementsByTagName("input")[0].focus();
+    }
+
+    function closeSearch(e) {
+        e.stopPropagation();
+        var element = document.querySelector('.search-icon');
+        element.classList.remove("active");
+
+    }
+</script>
+
+</html>

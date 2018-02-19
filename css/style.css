@@ -218,6 +218,7 @@ input:-moz-placeholder {
 
 @media screen and (max-width: 550px) {
     .search-icon.active {
-        width: 300px;
+        width: 260px;
     }
+  
 }

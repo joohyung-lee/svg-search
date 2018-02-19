@@ -139,6 +139,7 @@ input:-moz-placeholder {
     height: 55px;
     visibility: hidden;
     transition: visible 0.4s ease;
+    z-index: 100;
 }
 
 .active.search-icon .search-input {
@@ -166,6 +167,7 @@ input:-moz-placeholder {
     transform: rotate(225deg);
     transition: all 0.4s cubic-bezier(0.18, 0.89, 0.32, 1.28);
     z-index: 10;
+    background:red;
 }
 
 .search-icon.active .search-close {
